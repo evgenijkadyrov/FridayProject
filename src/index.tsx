@@ -4,18 +4,18 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 import App from "./n1-main/App";
-import {BrowserRouter, HashRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import {store} from "./n1-main/m2-bll/store";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-
-          <App />
-
-
-  </React.StrictMode>
+<Provider store={store}>
+    <App />
+</Provider>
+       </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
