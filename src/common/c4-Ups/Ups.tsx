@@ -4,7 +4,7 @@ import React from 'react';
 const Ups = () => {
     return (
         <div>
-          404
+          404!
         </div>
     );
 };
