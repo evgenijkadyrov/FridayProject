@@ -5,14 +5,17 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from "./n1-main/App";
 import {Provider} from "react-redux";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-
+<HashRouter>
     <App />
+</HashRouter>
+
 
 
 

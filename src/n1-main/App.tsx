@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Login from "../n2-features/f1-auth/a1-login/Login";
 import Tests from "../n2-features/f0-test/Tests";
 import Profile from "./m1-ui/Profile/Profile";
@@ -16,7 +16,7 @@ function App() {
 
             {/* <Header/>
             <Main/>*/}
-            <BrowserRouter>
+
                 <Routes>
                     <Route path={'/FridayProject//'} element={<Profile/>}/>
                     <Route path={'FridayProject/tests'} element={<Tests/>}/>
@@ -26,7 +26,7 @@ function App() {
                     <Route path={'FridayProject/login/registration'} element={<Registration/>}/>
                     <Route path={'FridayProject/login'} element={<Login/>}/>
                 </Routes>
-            </BrowserRouter>
+
         </div>
     );
 }
