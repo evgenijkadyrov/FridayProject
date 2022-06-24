@@ -16,8 +16,8 @@ function App() {
 
             {/* <Header/>
             <Main/>*/}
-            <HashRouter>
-                <Routes>y
+            <BrowserRouter>
+                <Routes>
                     <Route path={'/FridayProject//'} element={<Profile/>}/>
                     <Route path={'FridayProject/tests'} element={<Tests/>}/>
                     <Route path={'FridayProject/login/recover/newpassword'} element={<NewPassword/>}/>
@@ -26,7 +26,7 @@ function App() {
                     <Route path={'FridayProject/login/registration'} element={<Registration/>}/>
                     <Route path={'FridayProject/login'} element={<Login/>}/>
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </div>
     );
 }
