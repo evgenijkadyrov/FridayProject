@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Login from "../n2-features/f1-auth/a1-login/Login";
 import Tests from "../n2-features/f0-test/Tests";
 import Profile from "./m1-ui/Profile/Profile";
@@ -17,14 +17,14 @@ function App() {
             {/* <Header/>
             <Main/>*/}
             <HashRouter>
-                <Routes>
-                    <Route path={'/profile'} element={<Profile/>}/>
-                    <Route path={'/tests'} element={<Tests/>}/>
-                    <Route path={'login/recover/newpassword'} element={<NewPassword/>}/>
-                    <Route path={'login/recover'} element={<RecoverPassword/>}/>
-                    <Route path={'/*'} element={<Ups/>}/>
-                    <Route path={'login/registration'} element={<Registration/>}/>
-                    <Route path={'/login'} element={<Login/>}/>
+                <Routes>y
+                    <Route path={'/FridayProject//'} element={<Profile/>}/>
+                    <Route path={'FridayProject/tests'} element={<Tests/>}/>
+                    <Route path={'FridayProject/login/recover/newpassword'} element={<NewPassword/>}/>
+                    <Route path={'FridayProject/login/recover'} element={<RecoverPassword/>}/>
+                    <Route path={'FridayProject/*'} element={<Ups/>}/>
+                    <Route path={'FridayProject/login/registration'} element={<Registration/>}/>
+                    <Route path={'FridayProject/login'} element={<Login/>}/>
                 </Routes>
             </HashRouter>
         </div>

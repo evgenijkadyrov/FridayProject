@@ -4,6 +4,7 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 import App from "./n1-main/App";
+import {Provider} from "react-redux";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,6 +13,8 @@ root.render(
   <React.StrictMode>
 
     <App />
+
+
 
        </React.StrictMode>
 );
